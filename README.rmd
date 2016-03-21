@@ -1,0 +1,11 @@
+---
+title: "README"
+author: "Mike Fang"
+date: "March 20, 2016"
+output: html_document
+---
+
+This repo is created for the Kaggle competition: [San Francisco crime classification](https://www.kaggle.com/c/sf-crime/leaderboard).
+
+The gradient boosted tree algorithm performed well with the data (2.41228 multi-logloss with the test data). Because of the run-time issue, I stopped the cross validation at 50 iteration, in which the cv error was still decreasing. 
+
