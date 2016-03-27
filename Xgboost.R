@@ -31,7 +31,7 @@ params <- list("objective" = "multi:softprob",
                "num_class" = numclass)
 
 # cross-validation
-bst.cv <-  xgb.cv(params = params, data = X, label = Y, nfold = 3, nround = 50, verbost = T)
+bst.cv <-  xgb.cv(params = params, data = X, label = Y, nfold = 3, nround = 50, verbose = T)
 
 # training with gradient boost
 bst <- xgboost(data = X, label = Y, params = params, nrounds = 50)
